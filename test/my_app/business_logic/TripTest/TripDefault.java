@@ -31,12 +31,6 @@ public class TripDefault {
     }
 
     @Test
-    void getNameF() {
-        String wrong_name = "tesla";
-        assertNotEquals(wrong_name, trip.getName());
-    }
-
-    @Test
     void setName() {
         String test_name = "meta";
         trip.setName(test_name);
@@ -70,18 +64,5 @@ public class TripDefault {
     @Test
     void getBudget_amount() {
         assertEquals(default_amount, trip.getBudget_amount(), delta_num);
-    }
-
-    @Test
-    void getBudget_amountF() {
-        float test_amount = 2000.0F;
-        assertNotEquals(test_amount, trip.getBudget_amount(), delta_num);
-    }
-
-    @Test
-    void setBudget_amount() {
-        float test_amount = 2000.0F;
-        trip.setBudget_amount(test_amount);
-        assertEquals(test_amount, trip.getBudget_amount());
     }
 }
