@@ -72,4 +72,12 @@ public class Trip {
         }
         this.budget_amount += amount;
     }
+
+    public void decrease_budget_amount(float amount) {
+        String s_amount = String.valueOf(amount * -1);
+        if (!check_number(s_amount)) {
+            throw new IllegalArgumentException("Amount can only contain numbers.");
+        }
+        this.budget_amount -= amount;
+    }
 }
