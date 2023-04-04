@@ -38,6 +38,14 @@ public class TripDefault {
     }
 
     @Test
+    void setWrongName() {
+        String test_name = "m@#ta";
+        assertThrows(IllegalArgumentException.class, () -> {
+            trip.setName(test_name);
+        });
+    }
+
+    @Test
     void getStart_date() {
         assertNull(trip.getStart_date());
     }

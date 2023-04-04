@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="clean up remove leading zero&#10;&#10;02 to 2">
+    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="added method check_name() in Trip.java&#10;&#10;goal is to ensure only letters, numbers and spaces are allowed as argument.&#10;&#10;modified setName() to include check_name()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_app/business_logic/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_app/business_logic/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripDefault.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680597528238</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removed some tests in TripDefault.java to remove redundancy">
+      <created>1680598676044</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680598676044</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added method check_name() in Trip.java&#10;&#10;goal is to ensure only letters, numbers and spaces are allowed as argument.&#10;&#10;modified setName() to include check_name()">
+      <created>1680598768063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680598768063</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,7 +177,9 @@
     <MESSAGE value="Create tests for Trip class&#10;&#10;2 different instances (default, with arg)&#10;tests following methods&#10;  getName()&#10;  setName()&#10;  getStart_date()&#10;  setStart_date()&#10;  getEnd_date()&#10;  setEnd_date()&#10;  getBudget_amount()&#10;  setBudget_amount()" />
     <MESSAGE value="modify the initial setup for TripTest.java&#10;&#10;was creating a new instance of Trip instead of assigning to existing instance" />
     <MESSAGE value="clean up remove leading zero&#10;&#10;02 to 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up remove leading zero&#10;&#10;02 to 2" />
+    <MESSAGE value="removed some tests in TripDefault.java to remove redundancy" />
+    <MESSAGE value="added method check_name() in Trip.java&#10;&#10;goal is to ensure only letters, numbers and spaces are allowed as argument.&#10;&#10;modified setName() to include check_name()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added method check_name() in Trip.java&#10;&#10;goal is to ensure only letters, numbers and spaces are allowed as argument.&#10;&#10;modified setName() to include check_name()" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpendingTracker_Prototype$TripTest_getName.ic" NAME="TripTest.getName Coverage Results" MODIFIED="1680596554584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
