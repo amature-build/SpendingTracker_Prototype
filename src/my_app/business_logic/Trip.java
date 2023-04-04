@@ -1,6 +1,7 @@
 package my_app.business_logic;
 
 import java.time.LocalDate;
+import java.util.regex.Pattern;
 
 public class Trip {
     private String name;
@@ -12,10 +13,15 @@ public class Trip {
         this.budget_amount = 0;
     }
     public Trip(String trip_name, LocalDate trip_start_date, LocalDate trip_end_date) {
-        this.name = trip_name;
+        setName(trip_name);
         this.start_date = trip_start_date;
         this.end_date = trip_end_date;
         this.budget_amount = 0;
+    }
+
+    private boolean check_name(String test_name) {
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9 ]+");
+        return pattern.matcher(test_name).matches();
     }
 
     public String getName() {
@@ -23,6 +29,10 @@ public class Trip {
     }
 
     public void setName(String name) {
+        if (!check_name(name)) {
+            throw new IllegalArgumentException("Trip name can only contain letters, numbers, and spaces");
+        }
+
         this.name = name;
     }
 
