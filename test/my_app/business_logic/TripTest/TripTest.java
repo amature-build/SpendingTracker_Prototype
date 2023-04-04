@@ -11,11 +11,11 @@ import java.time.LocalDate;
 
 public class TripTest {
     private Trip trip;
-    String default_name = "tokyo";
-    LocalDate default_start_date = LocalDate.of(2023, 1, 1);
-    LocalDate default_end_date = LocalDate.of(2023, 1, 11);
-    float default_amount = 0;
-    float delta_num = 0.001F;
+    private final String default_name = "tokyo";
+    private final LocalDate default_start_date = LocalDate.of(2023, 1, 1);
+    private final LocalDate default_end_date = LocalDate.of(2023, 1, 11);
+    private final float default_amount = 0.0F;
+    private final float delta_num = 0.001F;
     @BeforeEach
     void setup() {
         trip = new Trip(default_name, default_start_date, default_end_date);
@@ -51,13 +51,13 @@ public class TripTest {
 
     @Test
     void getStart_dateF() {
-        LocalDate test_date = LocalDate.of(2023, 02, 02);
+        LocalDate test_date = LocalDate.of(2023, 2, 2);
         assertNotEquals(test_date, trip.getStart_date());
     }
 
     @Test
     void setStart_date() {
-        LocalDate test_date = LocalDate.of(2023, 02, 02);
+        LocalDate test_date = LocalDate.of(2023, 2, 2);
         trip.setStart_date(test_date);
         assertEquals(test_date, trip.getStart_date());
     }
@@ -69,13 +69,13 @@ public class TripTest {
 
     @Test
     void getEnd_dateF() {
-        LocalDate test_date = LocalDate.of(2023, 02, 02);
+        LocalDate test_date = LocalDate.of(2023, 2, 2);
         assertNotEquals(test_date, trip.getEnd_date());
     }
 
     @Test
     void setEnd_date() {
-        LocalDate test_date = LocalDate.of(2023, 02, 02);
+        LocalDate test_date = LocalDate.of(2023, 2, 2);
         trip.setEnd_date(test_date);
         assertEquals(test_date, trip.getEnd_date());
     }
