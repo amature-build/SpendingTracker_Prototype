@@ -24,6 +24,11 @@ public class Trip {
         return pattern.matcher(test_name).matches();
     }
 
+    private boolean check_number(String test_num) {
+        Pattern pattern = Pattern.compile("[0-9]");
+        return pattern.matcher(test_num).matches();
+    }
+
     public String getName() {
         return this.name;
     }
@@ -58,5 +63,13 @@ public class Trip {
 
     public void setBudget_amount(float budget_amount) {
         this.budget_amount = budget_amount;
+    }
+
+    public void increase_budget_amount(float amount) {
+        String s_amount = String.valueOf(amount);
+        if (!check_number(s_amount)) {
+            throw new IllegalArgumentException("Amount can only contain numbers.");
+        }
+        this.budget_amount += amount;
     }
 }
