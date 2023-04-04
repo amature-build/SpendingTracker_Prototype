@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class TripDefaultTest {
     private Trip trip;
@@ -40,9 +39,7 @@ public class TripDefaultTest {
     @Test
     void setWrongName() {
         String test_name = "m@#ta";
-        assertThrows(IllegalArgumentException.class, () -> {
-            trip.setName(test_name);
-        });
+        assertThrows(IllegalArgumentException.class, () -> trip.setName(test_name));
     }
 
     @Test

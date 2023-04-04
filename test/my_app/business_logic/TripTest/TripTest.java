@@ -28,10 +28,8 @@ public class TripTest {
 
     @Test
     void InvalidArgConstructor() {
-        String test_name = "sdl#$%123ASDF";
-        assertThrows(IllegalArgumentException.class, () -> {
-           trip = new Trip(test_name, default_start_date, default_end_date);
-        });
+        String test_name = "sdl#$%123AMAZON";
+        assertThrows(IllegalArgumentException.class, () -> trip = new Trip(test_name, default_start_date, default_end_date));
     }
 
     @Test
@@ -55,9 +53,7 @@ public class TripTest {
     @Test
     void setWrongName() {
         String test_name = "ama%$^on";
-        assertThrows(IllegalArgumentException.class, () -> {
-            trip.setName(test_name);
-        });
+        assertThrows(IllegalArgumentException.class, () -> trip.setName(test_name));
     }
 
     @Test
