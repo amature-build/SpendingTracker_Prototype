@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class TripDefault {
+public class TripDefaultTest {
     private Trip trip;
     private final String default_name = "New Trip";
     private final float default_amount = 0.0F;
