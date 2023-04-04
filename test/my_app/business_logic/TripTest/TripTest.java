@@ -18,7 +18,7 @@ public class TripTest {
     float delta_num = 0.001F;
     @BeforeEach
     void setup() {
-        Trip trip = new Trip(default_name, default_start_date, default_end_date);
+        trip = new Trip(default_name, default_start_date, default_end_date);
     }
 
     @AfterEach
@@ -70,7 +70,7 @@ public class TripTest {
     @Test
     void getEnd_dateF() {
         LocalDate test_date = LocalDate.of(2023, 02, 02);
-        assertNotEquals(default_end_date, trip.getEnd_date());
+        assertNotEquals(test_date, trip.getEnd_date());
     }
 
     @Test
