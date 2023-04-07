@@ -24,9 +24,19 @@ public class Trip {
         return pattern.matcher(test_name).matches();
     }
 
+
     private boolean check_number(String test_num) {
-        Pattern pattern = Pattern.compile("[0-9]");
-        return pattern.matcher(test_num).matches();
+        if (test_num == null) {
+            return false;
+        }
+
+        try {
+            Float.parseFloat(test_num);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+
+        return true;
     }
 
     public String getName() {
@@ -65,12 +75,17 @@ public class Trip {
         this.budget_amount = budget_amount;
     }
 
+    private float setNegativeToPositive(float amount) {
+        return amount > 0 ? amount : -amount;
+    }
+
     public void increase_budget_amount(float amount) {
         String s_amount = String.valueOf(amount);
         if (!check_number(s_amount)) {
             throw new IllegalArgumentException("Amount can only contain numbers.");
         }
-        this.budget_amount += amount;
+        float m_amount = setNegativeToPositive(amount);
+        this.budget_amount += m_amount;
     }
 
     public void decrease_budget_amount(float amount) {
@@ -78,6 +93,7 @@ public class Trip {
         if (!check_number(s_amount)) {
             throw new IllegalArgumentException("Amount can only contain numbers.");
         }
-        this.budget_amount -= amount;
+        float m_amount = setNegativeToPositive(amount);
+        this.budget_amount -= m_amount;
     }
 }
