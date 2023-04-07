@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class SqliteHelper {
+public class SqliteHelper implements AutoCloseable {
     private Connection connection;
 
     public SqliteHelper() throws  SQLException {
@@ -20,8 +20,18 @@ public class SqliteHelper {
     public Connection get_connection() {
         return connection;
     }
+    public boolean is_closed() throws SQLException {
+        return connection.isClosed();
+    }
 
     public void close_connection() throws SQLException {
         connection.close();
+    }
+
+    @Override
+    public void close() throws SQLException {
+        if (connection != null) {
+            connection.close();
+        }
     }
 }
