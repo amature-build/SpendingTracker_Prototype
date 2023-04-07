@@ -109,4 +109,44 @@ public class TripTest {
         trip.setBudget_amount(test_amount);
         assertEquals(test_amount, trip.getBudget_amount());
     }
+
+    @Test
+    void increase_budget() {
+        float test_amount = 140F;
+        float set_amount = 2000F;
+        float expected = test_amount + set_amount;
+        trip.setBudget_amount(set_amount);
+        trip.increase_budget_amount(test_amount);
+        assertEquals(expected, trip.getBudget_amount());
+    }
+
+    @Test
+    void increase_budget_NegAmount() {
+        float test_amount = -140F;
+        float set_amount = 2000F;
+        float expected = set_amount + (-test_amount);
+        trip.setBudget_amount(set_amount);
+        trip.increase_budget_amount(test_amount);
+        assertEquals(expected, trip.getBudget_amount());
+    }
+
+    @Test
+    void decrease_budget() {
+        float test_amount = 140F;
+        float set_amount = 2000F;
+        float expected = set_amount - test_amount;
+        trip.setBudget_amount(set_amount);
+        trip.decrease_budget_amount(test_amount);
+        assertEquals(expected, trip.getBudget_amount());
+    }
+
+    @Test
+    void decrease_budget_NegAmount() {
+        float test_amount = -140F;
+        float set_amount = 2000F;
+        float expected = set_amount - (-test_amount);
+        trip.setBudget_amount(set_amount);
+        trip.decrease_budget_amount(test_amount);
+        assertEquals(expected, trip.getBudget_amount());
+    }
 }
