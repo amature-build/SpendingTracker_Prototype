@@ -1,4 +1,4 @@
-package my_app.data_access.helpers;
+package my_app.helpers;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
