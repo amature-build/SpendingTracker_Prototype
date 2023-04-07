@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="add method for Trip.java&#10;&#10;decrease_budget_amount()&#10;  implements check_number()&#10;  decrease the amount base on argument">
+    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="add additional test to ensure following method work as intended.&#10;&#10;which is regardless of what the amount is, positive or negative, method will run as stated.&#10;&#10;if increase, will increase.&#10;if decrease, will decrease">
+      <change afterPath="$PROJECT_DIR$/src/my_app/business_logic/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/my_app/business_logic/ExchangeRate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_app/business_logic/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_app/business_logic/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/my_app/business_logic/TripTest/TripTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680600905189</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="for Trip.java&#10;modify the check_number()&#10;&#10;add method setNegativeToPositive()&#10;&#10;modify methods to implement setNegativeToPositive()&#10;&#10;  increase_budget_amount()&#10;  decrease_budget_amount()">
+      <created>1680850616219</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680850616219</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add additional test to ensure following method work as intended.&#10;&#10;which is regardless of what the amount is, positive or negative, method will run as stated.&#10;&#10;if increase, will increase.&#10;if decrease, will decrease">
+      <created>1680850708059</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680850708059</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +233,9 @@
     <MESSAGE value="quick clean up" />
     <MESSAGE value="add method for Trip.java&#10;&#10;check_number()&#10;  check so argument is 0-9&#10;  &#10;increase_budget_amount()&#10;  implements check_number()&#10;  increase the amount base on argument" />
     <MESSAGE value="add method for Trip.java&#10;&#10;decrease_budget_amount()&#10;  implements check_number()&#10;  decrease the amount base on argument" />
-    <option name="LAST_COMMIT_MESSAGE" value="add method for Trip.java&#10;&#10;decrease_budget_amount()&#10;  implements check_number()&#10;  decrease the amount base on argument" />
+    <MESSAGE value="for Trip.java&#10;modify the check_number()&#10;&#10;add method setNegativeToPositive()&#10;&#10;modify methods to implement setNegativeToPositive()&#10;&#10;  increase_budget_amount()&#10;  decrease_budget_amount()" />
+    <MESSAGE value="add additional test to ensure following method work as intended.&#10;&#10;which is regardless of what the amount is, positive or negative, method will run as stated.&#10;&#10;if increase, will increase.&#10;if decrease, will decrease" />
+    <option name="LAST_COMMIT_MESSAGE" value="add additional test to ensure following method work as intended.&#10;&#10;which is regardless of what the amount is, positive or negative, method will run as stated.&#10;&#10;if increase, will increase.&#10;if decrease, will decrease" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpendingTracker_Prototype$TripTest_getName.ic" NAME="TripTest.getName Coverage Results" MODIFIED="1680596554584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
