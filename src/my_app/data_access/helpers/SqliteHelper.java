@@ -5,23 +5,23 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SqliteHelper {
-    private Connection conn;
+    private Connection connection;
 
     public SqliteHelper() throws  SQLException {
         String url = "jdbc:sqlite:src/resource/database.db";
-        conn = DriverManager.getConnection(url);
+        connection = DriverManager.getConnection(url);
     }
 
     public SqliteHelper(String dbFilePath) throws SQLException {
         String url = "jdbc:sqlite:" + dbFilePath;
-        conn = DriverManager.getConnection(url);
+        connection = DriverManager.getConnection(url);
     }
 
     public Connection get_connection() {
-        return conn;
+        return connection;
     }
 
     public void close_connection() throws SQLException {
-        conn.close();
+        connection.close();
     }
 }
