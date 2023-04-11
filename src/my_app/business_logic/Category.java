@@ -19,6 +19,10 @@ public class Category {
         this.parentCategory = parentCategory;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return this.id;
     }
@@ -32,9 +36,10 @@ public class Category {
     }
 
     public List<Category> getSubCategories() throws SQLException {
+        categoryDao = new CategoryDao();
         if (!this.isTopLevel()) {
             throw new IllegalStateException("Is not a top level category.");
         }
-        return categoryDao.getSubCategories(this.parentCategory);
+        return categoryDao.getSubCategories(this);
     }
 }

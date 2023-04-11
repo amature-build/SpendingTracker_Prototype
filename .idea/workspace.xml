@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="Category.java&#10;getter method getID">
-      <change afterPath="$PROJECT_DIR$/src/my_app/business_logic/ICategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e69d69ee-7aac-4e85-8118-9e04303b071e" name="Changes" comment="Category&#10;added method&#10;&#10;getSubcategories()">
       <change beforePath="$PROJECT_DIR$/src/my_app/business_logic/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_app/business_logic/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/my_app/data_access/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my_app/data_access/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/my_app/business_logic/CategoryTest/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/my_app/business_logic/CategoryTest/CategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680908405719</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Category&#10;added method&#10;&#10;getSubcategories()">
+      <created>1681201154372</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681201154372</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +294,8 @@
     <MESSAGE value="moved directory" />
     <MESSAGE value="lost track. will be more mindful with git in future" />
     <MESSAGE value="Category.java&#10;getter method getID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Category.java&#10;getter method getID" />
+    <MESSAGE value="Category&#10;added method&#10;&#10;getSubcategories()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Category&#10;added method&#10;&#10;getSubcategories()" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpendingTracker_Prototype$TripTest_getName.ic" NAME="TripTest.getName Coverage Results" MODIFIED="1680596554584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
